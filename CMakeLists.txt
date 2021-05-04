@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(aardvark VERSION 0.4.0)
+project(Options-Algo VERSION 0.4.0)
 
 set(PROJECT_SOURCE_DIR "src")
 set(DOXYGEN_OUPUT_DIR "doxygen")
 set(DOXYGEN_HTML_OUPUT_DIR "../docs")
 set(DOXYGEN_IN_FILE "Doxyfile.in")
 set(DOXYGEN_README_FILE "../README.md")
-# Be sure to change the executable name, 
-# and change the input file name if it is different.
-add_executable(doxygenDemo ${PROJECT_SOURCE_DIR}/main.cpp)
+
+add_executable(main ${PROJECT_SOURCE_DIR}/main.cpp)
+
 
 include(CTest)
 enable_testing()
@@ -29,7 +29,7 @@ if (DOXYGEN_FOUND)
 
     # request to configure the file
     configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
-    message("Doxygen build started")
+    message("Building program in Doxygen")
 
     # Note: do not put "ALL" - this builds docs together with application EVERY TIME!
     add_custom_target( docs
