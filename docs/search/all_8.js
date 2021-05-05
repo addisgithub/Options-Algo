@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['total_11',['total',['../classoptions.html#a290974ef871f5ecdbed8ba19afecefc9',1,'options']]]
+  ['user_12',['user',['../classoptions.html#aa8bc3011bc77d6c43b450edbbb33fbf2',1,'options']]]
 ];

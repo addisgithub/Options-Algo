@@ -1,6 +1,6 @@
 /**
  * @file main.cpp
- * @brief This is a programs that checks amount of options to be expired and optimizes the poroflio.
+ * @brief This is a programs that checks amount of options to be expired and optimizes the poroflio by average amount of contracts to expire.
  * @author Addis Bogale and Bona Tufa
  * @date 04/21/2021
  * 
@@ -173,7 +173,7 @@ int main(int, char**) {
     string input;
     
     options test;
-    test.checker();
+    test.checker(); 
     test.stockprint();
     cin >> input;
     test.user(input);
